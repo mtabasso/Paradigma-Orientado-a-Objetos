@@ -1,0 +1,21 @@
+## Clase 2 (8/10/26)
+## Ejercicio IF
+
+public class Class {
+    public static void main (String[] args) {
+        int nota = 76;
+        char calificacion;
+
+        if (nota >= 90) {
+            calificacion = 'A';}
+        else if (nota >= 80) {
+            calificacion = 'B';}
+        else if (nota >= 70) {
+            calificacion = 'C';}
+        else if (nota >= 60) {
+            calificacion = 'D';}
+        else {
+            calificacion = 'F';}
+
+        System.out.println ("Calificacion: "  + calificacion);
+    }
