@@ -1,3 +1,23 @@
+/*
+Escribí una clase RegistroTemperaturas que trabaje con las temperaturas de una semana (7 días)
+usando un arreglo de double. La clase debe permitir:
+1. Cargar las 7 temperaturas del arreglo. 
+2. Calcular e imprimir el promedio de la semana. 
+3. Encontrar la temperatura máxima y la mínima. 
+4. Contar cuántos días superaron un umbral dado (por ejemplo, 30.0 grados). 
+5. Recorrer el arreglo usando length e imprimir cada día con su temperatura. Requisitos de calidad
+• Nombres autoexplicativos y pronunciables; clase en PascalCase, variables y métodos en
+camelCase. 
+• Ningún identificador que sea palabra reservada. 
+• Al menos un comentario de bloque (descripción de la clase) y comentarios de línea donde
+aporten. 
+• Todo el recorrido de arreglos debe usar length (no número)
+
+*/
+
+
+
+
 
 public class RegistroTemperaturas {
 
@@ -5,7 +25,7 @@ public class RegistroTemperaturas {
      * Clase que permite registrar y analizar las temperaturas
      * correspondientes a los 7 días de una semana.
      */
-    private double[] temperaturas;
+    private final double[] temperaturas;
 
     public RegistroTemperaturas() {
         temperaturas = new double[7];
@@ -13,9 +33,11 @@ public class RegistroTemperaturas {
 
     // Carga las temperaturas de los 7 días.
     public void cargarTemperaturas(double[] temperaturasCargadas) {
-        for (int i = 0; i < temperaturas.length; i++) {
-            temperaturas[i] = temperaturasCargadas[i];
+        if (temperaturasCargadas.length != temperaturas.length) {
+            throw new IllegalArgumentException("Se requieren exactamente 7 temperaturas.");
         }
+
+        System.arraycopy(temperaturasCargadas, 0, temperaturas, 0, temperaturas.length);
     }
 
     // Calcula e imprime el promedio semanal.
@@ -68,7 +90,13 @@ public class RegistroTemperaturas {
             System.out.println("Día " + (i + 1) + ": " + temperaturas[i] + " °C");
         }
     }
-}
 
-public static void main(String[] args) {
+    public static void main(String[] args) {
+        RegistroTemperaturas registro = new RegistroTemperaturas();
+        registro.cargarTemperaturas(new double[] {28.5, 31.0, 29.5, 32.0, 30.5, 27.0, 33.0});
+        registro.mostrarTemperaturas();
+        registro.calcularPromedio();
+        registro.mostrarMaximaYMinima();
+        registro.contarDiasSobreUmbral(30.0);
+    }
 }
