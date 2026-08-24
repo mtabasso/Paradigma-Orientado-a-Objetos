@@ -1,0 +1,74 @@
+
+public class RegistroTemperaturas {
+
+    /*
+     * Clase que permite registrar y analizar las temperaturas
+     * correspondientes a los 7 días de una semana.
+     */
+    private double[] temperaturas;
+
+    public RegistroTemperaturas() {
+        temperaturas = new double[7];
+    }
+
+    // Carga las temperaturas de los 7 días.
+    public void cargarTemperaturas(double[] temperaturasCargadas) {
+        for (int i = 0; i < temperaturas.length; i++) {
+            temperaturas[i] = temperaturasCargadas[i];
+        }
+    }
+
+    // Calcula e imprime el promedio semanal.
+    public void calcularPromedio() {
+        double suma = 0;
+
+        for (int i = 0; i < temperaturas.length; i++) {
+            suma += temperaturas[i];
+        }
+
+        double promedio = suma / temperaturas.length;
+        System.out.println("Promedio semanal: " + promedio + " °C");
+    }
+
+    // Encuentra e imprime la temperatura máxima y mínima.
+    public void mostrarMaximaYMinima() {
+        double temperaturaMaxima = temperaturas[0];
+        double temperaturaMinima = temperaturas[0];
+
+        for (int i = 1; i < temperaturas.length; i++) {
+            if (temperaturas[i] > temperaturaMaxima) {
+                temperaturaMaxima = temperaturas[i];
+            }
+
+            if (temperaturas[i] < temperaturaMinima) {
+                temperaturaMinima = temperaturas[i];
+            }
+        }
+
+        System.out.println("Temperatura máxima: " + temperaturaMaxima + " °C");
+        System.out.println("Temperatura mínima: " + temperaturaMinima + " °C");
+    }
+
+    // Cuenta los días que superaron el umbral indicado.
+    public void contarDiasSobreUmbral(double umbral) {
+        int cantidadDias = 0;
+
+        for (int i = 0; i < temperaturas.length; i++) {
+            if (temperaturas[i] > umbral) {
+                cantidadDias++;
+            }
+        }
+
+        System.out.println("Días que superaron " + umbral + " °C: " + cantidadDias);
+    }
+
+    // Recorre el arreglo usando length e imprime cada día.
+    public void mostrarTemperaturas() {
+        for (int i = 0; i < temperaturas.length; i++) {
+            System.out.println("Día " + (i + 1) + ": " + temperaturas[i] + " °C");
+        }
+    }
+}
+
+public static void main(String[] args) {
+}
