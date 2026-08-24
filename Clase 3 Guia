@@ -15,7 +15,17 @@ b) El mismo bytecode lo ejecuta la JVM de cada plataforma
 b) Una variable de entorno del SO que indica dónde buscar clases y librerías. 
 
 1.2 Verdadero o falso
+Escribí V o F. Si es falsa, corregila.   V
+La JVM es parte del JRE.  V
+El JDK incluye al JRE.  V
+En Java se compila un binario distinto para cada sistema operativo.  FALSO
+El compilador de Java se llama javac.  V
+El bytecode se ejecuta directamente sobre el hardware, sin intermediarios. FALSO
+El Garbage Collector se encarga de liberar la memoria que ya no se usa.  V
+respuesta:
+-En Java se compila un único archivo de bytecode (con extensión `.class`) que es completamente independiente del sistema operativo. Es la JVM instalada en cada plataforma la encargada de ejecutar ese mismo archivo.
 
+-El bytecode no se ejecuta directamente en el hardware; requiere obligatoriamente de la JVM (Java Virtual Machine) para actuar como intermediaria, interpretando y traduciendo las instrucciones al lenguaje de máquina nativo de cada plataforma
 
 1.3 Relacionar Columnas
 JDK: Kit de desarrollo: compilador, generador de documentación y herramientas
@@ -34,7 +44,8 @@ Classpath: Variable de entorno donde se buscan las clases y librerías.
 6. Hardware
 
 1.5 Respuesta breve
-
+1)Se dice esto porque en Java el compilador no genera un archivo ejecutable específico para un sistema operativo, sino que traduce el código fuente a un formato intermedio portable llamado **bytecode**. Este mismo archivo de bytecode puede ser transportado a cualquier computadora y será ejecutado por la **JVM** instalada en esa plataforma específica. La diferencia con un lenguaje como C es que, mientras en C se requiere compilar un binario físico distinto y específico para que funcione en cada sistema operativo, en Java compilas el código una sola vez y corre en cualquier lado gracias al intermediario (la JVM)
+2)El **CLASSPATH** es la variable de entorno del sistema operativo que le indica a Java la ruta exacta donde debe buscar las clases y librerías necesarias para el programa. Si está mal configurado, el compilador o la JVM no podrán encontrar los archivos `.class` de tu propio proyecto o de librerías externas que estés intentando utilizar, lo que provocará errores de ejecución o impedirá que el programa llegue a compilarse.
 
 Bloque 2: 
 
@@ -117,3 +128,102 @@ System.out.println("El total es" +total))
 	string[]: null
 
 2) En un arreglo de objetos, cada posición guarda una referencia en memoria que apunta al objeto real. No guarda el objeto en sí, sino que contiene un puntero que indica su posición en memoria para así ahorrar recursos.
+
+Bloque 4:
+
+Escribí una clase RegistroTemperaturas que trabaje con las temperaturas de una semana (7 días)
+usando un arreglo de double. La clase debe permitir:
+1. Cargar las 7 temperaturas del arreglo. 
+2. Calcular e imprimir el promedio de la semana. 
+3. Encontrar la temperatura máxima y la mínima. 
+4. Contar cuántos días superaron un umbral dado (por ejemplo, 30.0 grados). 
+5. Recorrer el arreglo usando length e imprimir cada día con su temperatura. Requisitos de calidad
+• Nombres autoexplicativos y pronunciables; clase en PascalCase, variables y métodos en
+camelCase. 
+• Ningún identificador que sea palabra reservada. 
+• Al menos un comentario de bloque (descripción de la clase) y comentarios de línea donde
+aporten. 
+• Todo el recorrido de arreglos debe usar length (no número)
+Respuesta:
+
+public class RegistroTemperaturas {
+
+    /*
+     * Clase que permite registrar y analizar las temperaturas
+     * correspondientes a los 7 días de una semana.
+     */
+    private final double[] temperaturas;
+
+    public RegistroTemperaturas() {
+        temperaturas = new double[7];
+    }
+
+    // Carga las temperaturas de los 7 días.
+    public void cargarTemperaturas(double[] temperaturasCargadas) {
+        if (temperaturasCargadas.length != temperaturas.length) {
+            throw new IllegalArgumentException("Se requieren exactamente 7 temperaturas.");
+        }
+
+        System.arraycopy(temperaturasCargadas, 0, temperaturas, 0, temperaturas.length);
+    }
+
+    // Calcula e imprime el promedio semanal.
+    public void calcularPromedio() {
+        double suma = 0;
+
+        for (int i = 0; i < temperaturas.length; i++) {
+            suma += temperaturas[i];
+        }
+
+        double promedio = suma / temperaturas.length;
+        System.out.println("Promedio semanal: " + promedio + " °C");
+    }
+
+    // Encuentra e imprime la temperatura máxima y mínima.
+    public void mostrarMaximaYMinima() {
+        double temperaturaMaxima = temperaturas[0];
+        double temperaturaMinima = temperaturas[0];
+
+        for (int i = 1; i < temperaturas.length; i++) {
+            if (temperaturas[i] > temperaturaMaxima) {
+                temperaturaMaxima = temperaturas[i];
+            }
+
+            if (temperaturas[i] < temperaturaMinima) {
+                temperaturaMinima = temperaturas[i];
+            }
+        }
+
+        System.out.println("Temperatura máxima: " + temperaturaMaxima + " °C");
+        System.out.println("Temperatura mínima: " + temperaturaMinima + " °C");
+    }
+
+    // Cuenta los días que superaron el umbral indicado.
+    public void contarDiasSobreUmbral(double umbral) {
+        int cantidadDias = 0;
+
+        for (int i = 0; i < temperaturas.length; i++) {
+            if (temperaturas[i] > umbral) {
+                cantidadDias++;
+            }
+        }
+
+        System.out.println("Días que superaron " + umbral + " °C: " + cantidadDias);
+    }
+
+    // Recorre el arreglo usando length e imprime cada día.
+    public void mostrarTemperaturas() {
+        for (int i = 0; i < temperaturas.length; i++) {
+            System.out.println("Día " + (i + 1) + ": " + temperaturas[i] + " °C");
+        }
+    }
+
+    public static void main(String[] args) {
+        RegistroTemperaturas registro = new RegistroTemperaturas();
+        registro.cargarTemperaturas(new double[] {28.5, 31.0, 29.5, 32.0, 30.5, 27.0, 33.0});
+        registro.mostrarTemperaturas();
+        registro.calcularPromedio();
+        registro.mostrarMaximaYMinima();
+        registro.contarDiasSobreUmbral(30.0);
+    }
+}
