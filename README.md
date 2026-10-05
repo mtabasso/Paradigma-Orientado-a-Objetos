@@ -25,6 +25,12 @@ Clase 4 (31/8/2026) === UML
 - Realizacion de la actividad integradora de UML "Modelado UML aplicado a un sistema universitario"
 Objetivo: Diseñar y justificar un modelo UML sencillo, conecando la vista estatica (clases y relaciones) con la vista dinamica (secuencia) y con elementos basicos de implementacion en Java
 
+Clase 5 (07/9/2026 )=== Modelo Primer Parcial
+
+Clase 6 (14/9/2026) === Primer Parcial
+
+Clase 7 (21/9/2026) === 
+
 Clase 8 (28/9/2026) === TPO
 - Comienzo de la realizacion del Trabajo Practico Obligatiorio de la materia
 - Se establecieron las bases sobre la cuales se desarrollará dicho TPO y se realizó el diagrama de clases correspondiente al mismo 
