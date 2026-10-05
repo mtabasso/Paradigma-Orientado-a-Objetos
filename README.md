@@ -4,12 +4,13 @@ Presentacion Grupo
 Nombre del grupo: GruPOO
 
 Integrantes:
-<img width="1024" height="576" alt="descargar" src="https://github.com/user-attachments/assets/37168a87-e23e-43dd-b53b-40d3afafa3f8" />
 
   Maximo Bautista Tabasso (1225425): 
     Soy estudiante de Ingenieria en Informatica, estoy en mi segundo año de la carrera. Tengp 19 años, me gusta el futbol, jugar videojuegos y programar.
 
   Luka Ruiz Diaz (1197562):
+  <img width="1024" height="576" alt="descargar" src="https://github.com/user-attachments/assets/57a2abd6-b9b7-49bb-8e05-a78cb78ec384" />
+
     Tengo 22 años, soy tecnico electromecanico y actual estudiante de Ingenieria en Informatica en el tercer año de la carrera. Me gusta programar, el diseño 3D y el tenis.
     
   Ulises Agustin Casto (1217173):
