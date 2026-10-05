@@ -8,8 +8,8 @@ Integrantes:
 
   Luka Ruiz Diaz (1197562):
 
+<img width="202" height="202" alt="thumbnail" src="https://github.com/user-attachments/assets/476d7017-9a9a-4a53-aa64-c860f5215e64" />
 
-  
   Tengo 22 años, soy tecnico electromecanico y actual estudiante de Ingenieria en Informatica en el tercer año de la carrera. Me gusta programar, el diseño 3D y el tenis.
     
   Ulises Agustin Casto (1217173):
