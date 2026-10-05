@@ -1,5 +1,3 @@
-<img width="283" height="475" alt="image" src="https://github.com/user-attachments/assets/2d79f93f-3d2c-4f60-ae0f-549f7c9f6fe4" /># Paradigma-Orientado-a-Objetos
-
 Presentacion Grupo
 Nombre del grupo: GruPOO
 
@@ -9,9 +7,10 @@ Integrantes:
     Soy estudiante de Ingenieria en Informatica, estoy en mi segundo año de la carrera. Tengp 19 años, me gusta el futbol, jugar videojuegos y programar.
 
   Luka Ruiz Diaz (1197562):
-  <img width="1024" height="576" alt="descargar" src="https://github.com/user-attachments/assets/57a2abd6-b9b7-49bb-8e05-a78cb78ec384" />
 
-    Tengo 22 años, soy tecnico electromecanico y actual estudiante de Ingenieria en Informatica en el tercer año de la carrera. Me gusta programar, el diseño 3D y el tenis.
+
+  
+  Tengo 22 años, soy tecnico electromecanico y actual estudiante de Ingenieria en Informatica en el tercer año de la carrera. Me gusta programar, el diseño 3D y el tenis.
     
   Ulises Agustin Casto (1217173):
     
