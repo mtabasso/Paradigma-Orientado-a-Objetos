@@ -1,9 +1,10 @@
-# Paradigma-Orientado-a-Objetos
+<img width="283" height="475" alt="image" src="https://github.com/user-attachments/assets/2d79f93f-3d2c-4f60-ae0f-549f7c9f6fe4" /># Paradigma-Orientado-a-Objetos
 
 Presentacion Grupo
 Nombre del grupo: GruPOO
 
 Integrantes:
+<img width="1024" height="576" alt="descargar" src="https://github.com/user-attachments/assets/37168a87-e23e-43dd-b53b-40d3afafa3f8" />
 
   Maximo Bautista Tabasso (1225425): 
     Soy estudiante de Ingenieria en Informatica, estoy en mi segundo año de la carrera. Tengp 19 años, me gusta el futbol, jugar videojuegos y programar.
