@@ -13,9 +13,6 @@ Integrantes:
     
   Ulises Agustin Casto (1217173):
     
-    
-  Juan Ciro Petrella (1189432):
-    
 
 Clase 2 (10/8/26) === Ejercicios IF
 
