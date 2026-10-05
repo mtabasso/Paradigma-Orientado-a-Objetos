@@ -16,7 +16,6 @@ Integrantes:
 
 Clase 2 (10/8/26) === Ejercicios IF
 
-
 Clase 3 (24/8/2026) === Funcionamiento de los Lenguajes Orientados a Objetos
 - Introduccion a JVM
 - Estructura de un programa y convenciones (palabras reservadas, camelCase)
@@ -25,3 +24,7 @@ Clase 4 (31/8/2026) === UML
 - Introduccion al modelado UML para la lectura y construccion de diagramas como plano para desarrollar un programa.
 - Realizacion de la actividad integradora de UML "Modelado UML aplicado a un sistema universitario"
 Objetivo: Diseñar y justificar un modelo UML sencillo, conecando la vista estatica (clases y relaciones) con la vista dinamica (secuencia) y con elementos basicos de implementacion en Java
+
+Clase 8 (28/9/2026) === TPO
+- Comienzo de la realizacion del Trabajo Practico Obligatiorio de la materia
+- Se establecieron las bases sobre la cuales se desarrollará dicho TPO y se realizó el diagrama de clases correspondiente al mismo 
