@@ -10,10 +10,6 @@
 | <img width="202" height="202" alt="thumbnail" src="https://github.com/user-attachments/assets/61dcc026-02fe-41b1-8dbb-e46544e3a8b4" /> | Luka Ruiz Diaz (1197562) |
 | ------------------------- | ------------------------- |
 | ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ | Tengo 22 años, soy tecnico electromecanico y actual estudiante de Ingenieria en Informatica en el tercer año de la carrera. Me gusta programar, el diseño 3D y el tenis. |
-
-| <br/>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<br/><br/><br/><br/><br/><br/> | Ulises Agustin Casto (1217173)ㅤ |
-  | ------------ | ------------ |
-  |  | AGREGAR DESCRIPCIONㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ |
   
     
 
